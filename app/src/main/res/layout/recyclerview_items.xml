@@ -1,0 +1,29 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:id="@+id/options"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Onion"
+        android:id="@+id/hint1"
+        android:background="@drawable/grey_border"
+        android:backgroundTint="@color/grey_bg"
+        android:textSize="14sp"
+        android:gravity="center_horizontal"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        android:textColor="@color/grey_hard"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"/>
+
+    </LinearLayout>

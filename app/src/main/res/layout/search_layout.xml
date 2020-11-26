@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/WhiteSmoke"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingTop="10dp"
+        >
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="70dp"
+            android:id="@+id/close"
+            android:padding="20dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            app:tint="@color/grey_hard" />
+
+        <EditText
+            android:layout_centerVertical="true"
+            android:id="@+id/et_search"
+            android:background="@null"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="60dp"
+            android:layout_height="match_parent"
+            android:hint="Milk, Soap, Shampoo, Eggs, Cakes ..."
+            android:layout_marginRight="50dp"
+            android:textColorHint="@color/grey_hard"/>
+        <requestFocus/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:id="@+id/remove_text"
+            android:src="@drawable/ic_action_navigation_close"
+            android:layout_alignParentEnd="true"
+            app:tint="@color/grey_hard" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.1px"
+            android:background="@color/grey_medium"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="70dp"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:id="@+id/suggestions">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:text="Popular Searches"
+                   android:textColor="@color/grey_medium"
+                   android:padding="10dp"
+                   android:textSize="17sp"
+                   android:fontFamily="sans-serif-condensed"/>
+               <androidx.recyclerview.widget.RecyclerView
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/popular_searches"/>
+           </LinearLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerViewSearch"
+                android:clipToPadding="false"/>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/no_search_items"
+                android:layout_centerHorizontal="true"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_baseline_search_24"
+                    app:tint="@color/colorPrimaryDark"
+                    android:layout_gravity="center_horizontal"/>
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/no_search"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:gravity="center_horizontal"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

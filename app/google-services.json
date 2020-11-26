@@ -1,0 +1,93 @@
+{
+  "project_info": {
+    "project_number": "208498865340",
+    "firebase_url": "https://home-delivery-290510.firebaseio.com",
+    "project_id": "home-delivery-290510",
+    "storage_bucket": "home-delivery-290510.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208498865340:android:748d86c4d419e0959f8cb9",
+        "android_client_info": {
+          "package_name": "com.codearlystudio.homedelivery"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208498865340-jiue54gupor357o26vp7mulf8qvebmlm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codearlystudio.homedelivery",
+            "certificate_hash": "0e5075f0d129e456acf8f7bc0166d156772cbf5c"
+          }
+        },
+        {
+          "client_id": "208498865340-43q2dshgbt5dm2a1b5gshe9ijh5rm6di.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codearlystudio.homedelivery",
+            "certificate_hash": "a99a375c0a15d731c6dc40f00bcd4dc01228427d"
+          }
+        },
+        {
+          "client_id": "208498865340-6t594mv0srd50s9umqqa0lrrf5n78f8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXr36jbf0zNsduODEv0JyPI-OvIHHmXDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208498865340-6t594mv0srd50s9umqqa0lrrf5n78f8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:208498865340:android:ef51072fb616b4959f8cb9",
+        "android_client_info": {
+          "package_name": "com.codearlystudio.productsmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "208498865340-eu5k4uqjvi9f5dp5ogiruiekjhndefbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.codearlystudio.productsmanagement",
+            "certificate_hash": "a99a375c0a15d731c6dc40f00bcd4dc01228427d"
+          }
+        },
+        {
+          "client_id": "208498865340-6t594mv0srd50s9umqqa0lrrf5n78f8q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDXr36jbf0zNsduODEv0JyPI-OvIHHmXDY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "208498865340-6t594mv0srd50s9umqqa0lrrf5n78f8q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

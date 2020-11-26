@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteSmoke"
+    tools:context=".MasterActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:id="@+id/open_drawer_navi"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_notes_24"
+                android:padding="15dp"/>
+            <EditText
+                android:backgroundTint="@color/WhiteSmoke"
+                app:drawableTint="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_centerVertical="true"
+                android:textColorHint="@color/grey_medium"
+                android:editable="false"
+                android:focusableInTouchMode="false"
+                android:id="@+id/search_box"
+                android:background="@drawable/grey_border"
+                android:paddingEnd="8sp"
+                android:paddingStart="40sp"
+                android:textSize="15sp"
+                android:gravity="center_vertical"
+                android:layout_marginStart="70dp"
+                android:layout_marginEnd="10dp"
+                android:hint="Fruits, Vegetables and more" />
+            <ImageView
+                android:layout_marginStart="10sp"
+                android:layout_width="40dp"
+                android:padding="10sp"
+                android:layout_toEndOf="@+id/open_drawer_navi"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_search_24"
+                app:tint="@color/CadetBlue" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/CadetBlueLight"
+                android:paddingEnd="10sp"
+                android:visibility="gone"
+                android:id="@+id/order_track_layout"
+                android:paddingStart="20sp"
+                android:paddingTop="15sp"
+                android:paddingBottom="15sp"
+                android:layout_marginBottom="5sp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="15sp"
+                    android:layout_centerVertical="true"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/order_number"
+                    android:textColor="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Track Order"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:paddingLeft="10sp"
+                    android:paddingRight="10sp"
+                    android:paddingTop="5sp"
+                    android:paddingBottom="5sp"
+                    android:background="@drawable/primary_border"
+                    android:layout_alignParentEnd="true"
+                    android:textAllCaps="true"
+                    android:textSize="13sp"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:paddingStart="5sp"
+                android:paddingEnd="25sp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:id="@+id/linear_time"
+                android:background="@drawable/time_curve">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="20sp"
+                        android:id="@+id/date"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_gravity="center"/>
+                    <TextView
+                        android:textSize="15sp"
+                        android:textColor="@color/grey_dark"
+                        android:layout_gravity="center"
+                        android:id="@+id/month"
+                        android:fontFamily="sans-serif-condensed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_gravity="center_vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAllCaps="true"
+                            android:id="@+id/day1"
+                            android:textStyle="bold"
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            android:fontFamily="sans-serif-condensed"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:textSize="13sp"
+                            android:id="@+id/day2"
+                            android:textColor="@color/grey_dark"
+                            android:fontFamily="sans-serif-condensed"/>
+                    </LinearLayout>
+                    <TextView
+                        android:textColor="@color/grey_dark"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:id="@+id/time"
+                        android:fontFamily="sans-serif-condensed"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/WhiteSmoke"/>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_cart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20sp"
+            android:visibility="gone"
+            app:fabCustomSize="70dp"
+            app:srcCompat="@drawable/logo_notification"
+            app:maxImageSize="40sp"
+            android:tint="@color/colorPrimaryDark"
+            app:backgroundTint="@color/white"
+            tools:ignore="ContentDescription"
+            app:rippleColor="@color/grey_medium" />
+        <TextView
+            android:id="@+id/text_count"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="7dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_alignParentEnd="true"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_marginEnd="20sp"
+            android:layout_marginTop="15sp"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:background="@drawable/border" />
+    </RelativeLayout>
+</RelativeLayout>

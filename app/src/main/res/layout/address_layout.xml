@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:background="@drawable/round_top"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <View
+                android:layout_width="50dp"
+                android:layout_height="5dp"
+                android:background="@color/grey_medium"
+                android:layout_gravity="center"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_gravity="center"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_baseline_location_on_24"
+                app:tint="@color/colorPrimaryDark" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/change_delivery_address"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Select delivery address"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:paddingEnd="15dp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:id="@+id/add_new_address"
+                android:text=" Add New Address"
+                android:gravity="center_vertical"
+                android:drawableStart="@drawable/ic_baseline_add_24"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@color/colorPrimaryDark"
+                app:drawableTint="@color/colorPrimaryDark" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recyclerViewAddress"
+                android:layout_marginTop="20dp"/>
+            
+            <Button
+                android:layout_marginTop="10sp"
+                android:layout_marginBottom="20sp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:textAllCaps="false"
+                android:text="Continue"
+                android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                android:textSize="15sp"
+                android:visibility="gone"
+                android:id="@+id/btn_continue"
+                android:textColor="@color/colorPrimaryDark"
+                android:background="@color/CadetBlueLight"
+                app:drawableTint="@color/colorPrimaryDark"
+                android:paddingStart="20sp"
+                android:paddingEnd="10sp"/>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

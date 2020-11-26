@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:openDrawer="left"
+    android:id="@+id/drawer_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MasterActivity">
+
+    <include
+        layout="@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.google.android.material.navigation.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:visibility="gone"
+                android:id="@+id/logout_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="5sp"
+                android:elevation="10dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="10dp">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorPrimaryDark">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Logged in as:"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey_medium"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAllCaps="true"
+                        android:id="@+id/user_name"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="20sp"
+                        android:textColor="@color/white"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/user_phone"
+                        android:textAllCaps="true"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="15sp"
+                        android:textColor="@color/grey_medium"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Logout"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="17sp"
+                            android:textColor="@color/white"/>
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            app:tint="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/login_card"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="5sp"
+                android:visibility="gone"
+                android:elevation="10dp"
+                app:cardElevation="10dp"
+                app:cardMaxElevation="10dp">
+                <LinearLayout
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@color/colorPrimaryDark">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lets get started"
+                        android:fontFamily="sans-serif-condensed"
+                        android:textSize="14sp"
+                        android:textColor="@color/grey_medium"/>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sign In"
+                            android:textAllCaps="true"
+                            android:fontFamily="sans-serif-condensed"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"/>
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            app:tint="@color/white"
+                            android:contentDescription="TODO" />
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:fillViewport="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="25dp"
+                    android:paddingBottom="15dp"
+                    android:clipToPadding="false">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingRight="10dp"
+                        android:paddingLeft="10dp"
+                        android:orientation="vertical">
+                        <!--Home-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/relative_home">
+
+                            <ImageView
+                                android:layout_centerVertical="true"
+                                android:layout_width="30sp"
+                                android:padding="5dp"
+                                android:layout_height="30sp"
+                                android:src="@drawable/ic_home_black_24dp"
+                                app:tint="@color/colorPrimaryDark" />
+                            <TextView
+                                android:layout_marginStart="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Home"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textSize="18sp"/>
+                        </RelativeLayout>
+                        <!--Cart-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="13dp"
+                            android:id="@+id/relative_cart">
+
+                            <ImageView
+                                android:layout_centerVertical="true"
+                                android:layout_width="30sp"
+                                android:padding="5dp"
+                                android:layout_height="30sp"
+                                android:src="@drawable/ic_baseline_shopping_cart_24"
+                                app:tint="@color/colorPrimaryDark" />
+                            <TextView
+                                android:layout_marginStart="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Items in Cart"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textSize="18sp"/>
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp"
+                                android:paddingBottom="5dp"
+                                android:gravity="center"
+                                android:id="@+id/total_cart"
+                                android:layout_marginRight="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:visibility="gone"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="0"
+                                android:textSize="15sp"
+                                android:background="@drawable/grey_border"
+                                android:backgroundTint="@color/red_color"/>
+                        </RelativeLayout>
+                        <!--Orders-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="13dp"
+                            android:id="@+id/relative_orders">
+
+                            <ImageView
+                                android:layout_centerVertical="true"
+                                android:layout_width="30sp"
+                                android:padding="5dp"
+                                android:layout_height="30sp"
+                                android:src="@drawable/ic_baseline_orders_24"
+                                app:tint="@color/colorPrimaryDark" />
+                            <TextView
+                                android:layout_marginStart="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="My Orders"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textSize="18sp"/>
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:paddingTop="5dp"
+                                android:visibility="gone"
+                                android:paddingBottom="5dp"
+                                android:gravity="center"
+                                android:id="@+id/total_orders"
+                                android:layout_marginEnd="10dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="5"
+                                android:textSize="15sp"
+                                android:background="@drawable/grey_border"
+                                android:backgroundTint="@color/red_color"/>
+                        </RelativeLayout>
+                        <!--Address-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/relative_address"
+                            android:layout_marginTop="13dp">
+
+                            <ImageView
+                                android:layout_centerVertical="true"
+                                android:layout_width="30sp"
+                                android:padding="5dp"
+                                android:layout_height="30sp"
+                                android:src="@drawable/ic_baseline_location_on_24"
+                                app:tint="@color/colorPrimaryDark" />
+                            <TextView
+                                android:layout_marginStart="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Address Manager"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textSize="18sp"/>
+                        </RelativeLayout>
+                        <!--Favourites-->
+                        <RelativeLayout
+                            android:id="@+id/relative_favourites"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="13dp">
+
+                            <ImageView
+                                android:layout_centerVertical="true"
+                                android:layout_width="30sp"
+                                android:padding="5dp"
+                                android:layout_height="30sp"
+                                android:src="@drawable/heart_black"
+                                app:tint="@color/colorPrimaryDark" />
+                            <TextView
+                                android:layout_marginStart="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Favourite/Saved Items"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textSize="18sp"/>
+                        </RelativeLayout>
+                        <!--Contact Us-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:id="@+id/relative_contact"
+                            android:layout_marginTop="13dp">
+
+                            <ImageView
+                                android:layout_centerVertical="true"
+                                android:layout_width="30sp"
+                                android:padding="5dp"
+                                android:layout_height="30sp"
+                                android:src="@drawable/ic_baseline_contact_support_24"
+                                app:tint="@color/colorPrimaryDark" />
+                            <TextView
+                                android:layout_marginStart="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Contact Us"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textSize="18sp"/>
+                        </RelativeLayout>
+                        <!--About Us-->
+                        <RelativeLayout
+                            android:id="@+id/relative_about"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="13dp">
+
+                            <ImageView
+                                android:layout_centerVertical="true"
+                                android:layout_width="30sp"
+                                android:padding="5dp"
+                                android:layout_height="30sp"
+                                android:src="@drawable/ic_baseline_info_24"
+                                app:tint="@color/colorPrimaryDark" />
+                            <TextView
+                                android:layout_marginStart="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="About Us"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textSize="18sp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <!--App Version-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--Whatsapp-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:id="@+id/linear_whatsapp"
+                            android:background="@color/white"
+                            android:layout_height="wrap_content">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_marginRight="70dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:drawableTint="@color/black"
+                                    android:paddingTop="15dp"
+                                    android:textStyle="bold"
+                                    android:textAllCaps="true"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="30dp"
+                                    android:text="Order on Whatsapp"
+                                    android:fontFamily="sans-serif-smallcaps"
+                                    android:id="@+id/textView"
+                                    android:textColor="@color/black"
+                                    android:textSize="15sp"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="Just text us the list of items on whatsapp and get instant delivery on your doorstep."
+                                    android:fontFamily="sans-serif-condensed"
+                                    android:id="@+id/textViewDesc"
+                                    android:paddingBottom="10dp"
+                                    android:paddingLeft="15dp"
+                                    android:paddingRight="25dp"
+                                    android:textColor="@color/grey_medium"
+                                    android:textSize="13sp"
+                                    android:layout_marginBottom="5dp"/>
+                            </LinearLayout>
+                            <ImageView
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginRight="15dp"
+                                android:src="@drawable/c2_whatsapp"/>
+
+                        </RelativeLayout>
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5px"
+                            android:background="@color/grey_medium" />
+                        <!--App Version-->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="13dp">
+
+                            <ImageView
+                                android:layout_centerInParent="true"
+                                android:layout_centerVertical="true"
+                                android:layout_width="30sp"
+                                android:layout_height="30sp"
+                                android:padding="5dp"
+                                android:layout_toLeftOf="@id/v1"
+                                android:src="@drawable/ic_baseline_info_24"
+                                app:tint="@color/grey_medium" />
+                            <TextView
+                                android:layout_centerInParent="true"
+                                android:id="@+id/v1"
+                                android:layout_centerVertical="true"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="v1.0.0"
+                                android:fontFamily="sans-serif-condensed-light"
+                                android:textSize="16sp"/>
+                        </RelativeLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    </com.google.android.material.navigation.NavigationView>
+
+</androidx.drawerlayout.widget.DrawerLayout>

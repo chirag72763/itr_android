@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:background="@drawable/round_top"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="5dp"
+                    android:background="@color/grey_medium"
+                    android:layout_gravity="center"
+                    android:id="@+id/close"/>
+                <ImageView
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="100sp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/logo_default" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Many needs, one app"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/grey_dark"
+                android:gravity="center"
+                android:fontFamily="sans-serif-condensed"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Need groceries, vegetables or medicines delivered?\nYou are at right place."
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="sans-serif-condensed-light"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You now have the power to move things"
+                android:textStyle="italic"
+                android:textSize="16dp"
+                android:textColor="@color/grey_hard"
+                android:gravity="center"
+                android:fontFamily="sans-serif-condensed-light"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:textSize="17dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-light"
+                android:layout_height="wrap_content"
+                android:text="@string/about_us_string"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_height="wrap_content"
+                android:text="Save the"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_height="wrap_content"
+                android:text="excuses and time."/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content"
+                android:text="The better way to get things done,"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_height="wrap_content"
+                android:text="Order it now!"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:id="@+id/logo_banner"
+                android:layout_marginTop="25sp"
+                android:paddingBottom="50sp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo_banner" />
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

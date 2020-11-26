@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="15sp"
+    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/WhiteSmoke"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:padding="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="400dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter"
+                    android:padding="20dp"
+                    android:id="@+id/variant_image"/>
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/recyclerViewVariants"
+                android:paddingTop="5dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_margin="15dp"
+                android:background="@color/grey_hard"/>
+
+            <TextView
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/variant_name"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-smallcaps"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/variant_desc"
+                android:ellipsize="end"
+                android:maxLines="6"
+                android:textSize="15dp"
+                android:textColor="@color/grey_hard"
+                android:fontFamily="sans-serif-condensed"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/variant_see_more"
+                android:text="See More"
+                android:gravity="end"
+                android:textSize="15sp"
+                android:textColor="@color/blue"
+                android:fontFamily="sans-serif-condensed"/>
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

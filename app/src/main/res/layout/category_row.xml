@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/WhiteSmoke"
+    android:id="@+id/all"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical">
+
+    <!--Items From Favourites-->
+    <LinearLayout
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/WhiteSmoke"
+        android:layout_below="@+id/recyclerView"
+        android:id="@+id/favourites_layout"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:padding="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="120sp"
+                android:layout_marginLeft="10sp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/black"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:text="Top Products"
+                    android:fontFamily="sans-serif-condensed"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/see_all"
+                android:paddingLeft="15sp"
+                android:paddingRight="10sp"
+                android:paddingTop="5sp"
+                android:paddingBottom="5sp"
+                android:background="@drawable/border"
+                android:backgroundTint="@color/CadetBlueLight"
+                android:layout_alignParentEnd="true">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="Explore All" />
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_gravity="center"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="3sp"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                    app:tint="@color/colorPrimaryDark" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7sp"
+            android:id="@+id/recyclerViewExclusive" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:background="@color/CadetBlueLight"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="70dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/black"
+                    android:paddingTop="15dp"
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="30dp"
+                    android:text="Explore Vegetables"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/textView"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Explore Vegetables"
+                    android:fontFamily="sans-serif-condensed"
+                    android:id="@+id/textViewDesc"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="25dp"
+                    android:textColor="@color/black"
+                    android:textSize="13sp"
+                    android:layout_marginBottom="5dp"/>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryDark"
+                android:fontFamily="sans-serif-condensed"
+                android:text="See all"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/primary_border"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="15dp"/>
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerView"/>
+    </LinearLayout>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/banner"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/banner_layout"
+            android:orientation="vertical">
+            <TextView
+                android:paddingEnd="25dp"
+                android:id="@+id/banner_title"
+                android:textColor="@color/black"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:text="What makes our fruits and veggies truly fresh."/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="14sp"
+                android:id="@+id/banner_subtitle"
+                android:layout_height="wrap_content"
+                android:text="Hello World. What makes our fruits and veggies truly fresh. What makes our fruits and veggies truly fresh. What makes our fruits and veggies truly fresh."
+                android:textColor="@color/grey_hard"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:paddingStart="15sp"
+                android:paddingEnd="15sp"
+                android:background="@drawable/primary_border_banner"
+                android:id="@+id/banner_message"
+                android:textStyle="italic"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="Order Now. We will deliver it for you"
+                android:textColor="@color/colorPrimaryDark"/>
+        </LinearLayout>
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/banner_layout"
+            android:layout_width="match_parent"
+            android:id="@+id/banner_image"
+            android:adjustViewBounds="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/c2_meat" />
+    </RelativeLayout>
+
+</LinearLayout>

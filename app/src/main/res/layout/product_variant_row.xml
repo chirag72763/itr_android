@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dp"
+    android:id="@+id/variant_detail_row">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey_bg"
+        android:layout_marginRight="120dp"/>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="110dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:textAlignment="gravity"
+            android:fontFamily="sans-serif-condensed"
+            android:textColor="@color/black"
+            android:id="@+id/variant_size"
+            android:text="500 Gms"/>
+        <TextView
+            android:layout_marginRight="5dp"
+            android:textAlignment="gravity"
+            android:text="₹ 80"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey_hard"
+            android:layout_centerVertical="true"
+            android:id="@+id/variant_original"
+            android:textSize="13dp"
+            android:gravity="end"/>
+        <TextView
+            android:textAlignment="gravity"
+            android:layout_width="wrap_content"
+            android:gravity="end"
+            android:layout_height="wrap_content"
+            android:id="@+id/variant_price"
+            android:textColor="@color/green_color"
+            android:text="₹ 60"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="80dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/primary_border"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="Add"
+            android:id="@+id/add"
+            android:textAllCaps="false"
+            android:textSize="12dp"
+            android:layout_gravity="center"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:background="@drawable/grey_border"
+            android:textColor="@color/grey_medium"
+            android:id="@+id/out_of_stock"
+            android:text="Out of stock"
+            android:textAllCaps="false"
+            android:visibility="gone"
+            android:textSize="12dp"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:visibility="gone"
+            android:background="@drawable/border"
+            android:layout_width="80dp"
+            android:id="@+id/cart_counter"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_gravity="center"
+                android:id="@+id/remove_from_cart"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:layout_marginBottom="1dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:layout_gravity="center"
+                android:id="@+id/counter"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="11dp"
+                android:textColor="@color/black"
+                android:layout_weight="1.3"/>
+            <TextView
+                android:id="@+id/add_to_cart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:text="+"
+                android:textSize="16dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

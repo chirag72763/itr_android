@@ -1,0 +1,90 @@
+package com.codearlystudio.homedelivery.data;
+
+public class Constants {
+    public static final String ROOT_URL = "https://codearly.in/homedelivery/";
+    public static final String BASE_URL = "https://codearly.in/homedelivery";
+    public static final String ROOT_BASE_URL = "https://codearly.in/";
+    public static final String MAIL_ADDRESS = "mailto:chirragbajaj@gmail.com";
+    public static final String TELEPHONE_NUMBER = "tel:+917276359585";
+    public static final String WHATSAPP_DEFAULT_NUMBER = "+91 9028933387";
+    public static final String INTRO_TITLE = "Delivery\nOn your doorstep\n";
+    public static final String CART_COUNTER_URL = ROOT_URL + "getCartCount.php?user_id=";
+    public static final String ORDER_COUNTER_URL = ROOT_URL + "getOrderCount.php?user_id=";
+    public static final String PRODUCT_FETCH_URL = ROOT_URL + "getProducts.php";
+    public static final String SECTIONS_FETCH_URL = ROOT_URL + "getSectionByCategory.php?user_id=";
+    public static final String FETCH_PRODUCT_NAMES = ROOT_URL + "getSearchResults.php?key=";
+    public static final String FAVOURITES_FETCH_URL = ROOT_URL + "getFvourites.php?user_id=";
+    public static final String PRODUCT_FETCH_DETAILS = ROOT_URL + "getProductDetails.php";
+    public static final String CART_URL = ROOT_URL + "getCartItems.php?user_id=";
+    public static final String CONFIRM_CART_URL = ROOT_URL + "getConfirmCartItems.php?user_id=";
+    public static final String FETCH_ORDERS = ROOT_URL + "getOrders.php?user_id=";
+    public static final String FETCH_ADDRESSES = ROOT_URL + "getAddresses.php?user_id=";
+    public static final String FETCH_SECTIONS = ROOT_URL + "getSections.php?category_id=";
+    public static final String FETCH_DEFAULT_ADDRESSES = ROOT_URL + "getDefaultAddress.php?user_id=";
+    public static final String FETCH_TIME_SLOTS = ROOT_URL + "getTimeSlots.php";
+    public static final String FETCH_ORDER_DETAILS = ROOT_URL + "getOrderDetails.php?ride_id=";
+    public static final String SECTION_NAME = "section_name";
+    public static final String WHATSAPP_API_URL = "https://api.whatsapp.com/send?phone=";
+    public static final String WHATSAPP_PACKAGE_NAME = "com.whatsapp";
+    public static final String WHATSAPP_NOT_INSTALLED = "Whatsapp app not installed in your phone";
+    public static final String ENTER_CORRECT_OTP = "Enter correct 4 digit OTP received on ";
+    public static final String WRONG_OTP = "Wrong OTP";
+    public static final String USER_ID = "user_id";
+    public static final String USER_NAME = "user_name";
+    public static final String USER_PHONE = "user_phone";
+    public static final String PRODUCT_ID = "product_id";
+    public static final String CATEGORY_ID = "category_id";
+    public static final String ITEM_COUNT = "item_count";
+    public static final String CONFIRM_ORDER = "Confirm order and pay the total amount after delivery";
+    public static final String ORDER_TITLE = "Order Confirm";
+    public static final String CANCEL = "Cancel";
+    public static final String YES = "Yes";
+    public static final String SCHEDULE_DATE = "schedule_date";
+    public static final String SCHEDULE_TIME = "schedule_time";
+    public static final String DASHBOARD_FLAG = "dshboard_flag";
+    public static final String RIDE_ID = "ride_id";
+    public static final String USER_FCM_TOKEN = "user_fcm_token";
+    public static final String PRICING_CHANGE_TITLE = "Pricing for following items has changed.";
+    public static final String CANCEL_ORDER = "Cancel Order";
+    public static final String CANCEL_ORDER_CONFIRM = "Are you sure you want to cancel this order?";
+    public static final String RETURN_ORDER = "Return Order";
+    public static final String RETURN_ORDER_CONFIRM = "Are you sure you want to raise return request for this order?";
+    public static final String SECTION_ID = "section_id";
+    public static final String POSITION = "position";
+    public static final String NO_SEARCH_RESULT = "No results found for: '";
+    public static final String CHOOSE_DEFAULT_ADDRESS_TEXT = "Choose Default Address";
+    public static final String NO_ITEMS_IN_CART = "No items in Cart";
+    public static final String ENTER_CORRECT_NO = "Enter correct 10 digit mobile number";
+    public static final String PROVIDE_ALL = "Please provide all the details";
+    public static final String TODAY = "TODAY";
+    public static final String TOMORROW = "TOMORROW";
+    public static final String NEXT_AVAILABLE_SLOT = "Next available slot: \nBetween ";
+    public static final String ADDED_TO_FAVOURITES = "Item added to favourites!";
+    public static final String REMOVED_FROM_FAVOURITES = "Item removed from favourites!";
+    public static final String INTENT_SOURCE = "source";
+    public static final String ACTIVE_ORDERS_TEXT = " Active Orders";
+    public static final String PLUS_ITEMS = "+ items";
+    public static final String ADD = "Add";
+    public static final String FAVOURITES = "Favourites";
+    public static final String FAVOURITES_ADD = "Would you like to add this item to favourites?";
+    public static final String FAVOURITES_REMOVE = "Would you like to remove this item from favourites?";
+    public static final String REMOVE = "Remove";
+    public static String SHARED_PREF = "Delivery_Pref";
+    public static String LOGIN_FLAG = "login_flag";
+    public static String INTRO_OPEN = "isIntroOpnend";
+    public static String introTitle1 = "Fresh Food";
+    public static String introDesc1 = "We offers you the most convenient way to shop for safe to eat produces. Buy pesticide-free, fresh and high-quality vegetables and stay healthy.";
+    public static String introTitle2 = "Fast Delivery";
+    public static String introDesc2 = "If you want a 20-90 minute grocery delivery, let our delivery drivers do all the leg work for you and deliver what you need to your door. Same day, on demand groceries, delivered instantly.";
+    public static String introTitle3 = "Easy Payment";
+    public static String introDesc3 = "We delivers your daily necessaries at your doorstep with the effort of just a click. Our trained logistics team will deliver your orders at your footstep. ";
+    public static String WRONG_INPUT_TITLE = "Wrong Input";
+    public static String ENTER_CORRECT = "Enter your correct 10 digit mobile number";
+    public static String OK = "Ok";
+    public static String[] searches =
+            {"Onion", "Tomato", "Capsicum", "Banana", "Apple", "Milk",
+                    "Curd", "Maggi", "Soap", "Shampoo", "Detergent",
+                    "Chicken", "Fish", "Cakes", "Eggs", "Drinks", "Oil",
+                    "Serum", "Biscuits", "Namkeen", "Juices", "Deos"};
+
+}

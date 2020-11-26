@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.core.widget.NestedScrollView
+        android:background="@drawable/round_top"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="50dp"
+                    android:layout_height="5dp"
+                    android:background="@color/grey_medium"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/close"/>
+                <ImageView
+                    android:layout_centerInParent="true"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:padding="15dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_baseline_call_24"
+                    app:tint="@color/blue" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Contact Us"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_marginTop="25dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tingling fingertips?"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="sans-serif-condensed"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="That's a magnetic urge to get in touch with us!"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:fontFamily="sans-serif-condensed-light"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/grey_border"
+                android:text="Call Us Maybe"
+                android:id="@+id/call_button"
+                android:textSize="18dp"
+                android:textColor="@color/red_color"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAllCaps="false"
+                android:layout_marginTop="15dp"/>
+            <Button
+                android:textSize="18dp"
+                android:background="@drawable/grey_border"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mail_button"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:text="Drop Us a Line"
+                android:textColor="@color/red_color"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textAllCaps="false"
+                android:layout_marginTop="5dp"/>
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
